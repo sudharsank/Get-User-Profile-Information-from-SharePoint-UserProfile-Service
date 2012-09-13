@@ -1,0 +1,5 @@
+D:\Sudharsan\Coding\GetUserInfo\GetUserInfo\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Sudharsan\Coding\GetUserInfo\GetUserInfo\bin\Debug\GetUserInfo.exe
+D:\Sudharsan\Coding\GetUserInfo\GetUserInfo\bin\Debug\GetUserInfo.pdb
+D:\Sudharsan\Coding\GetUserInfo\GetUserInfo\obj\x86\Debug\GetUserInfo.exe
+D:\Sudharsan\Coding\GetUserInfo\GetUserInfo\obj\x86\Debug\GetUserInfo.pdb
