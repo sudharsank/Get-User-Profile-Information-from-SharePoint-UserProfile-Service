@@ -8,3 +8,8 @@ C:\Users\remoteadmin\Desktop\GetUserInfo\GetUserInfo\obj\x86\Debug\GetUserInfo.p
 C:\Users\remoteadmin\Desktop\GetUserInfo\GetUserInfo\bin\Debug\GetUserInfo.exe
 C:\Users\remoteadmin\Desktop\GetUserInfo\GetUserInfo\bin\Debug\GetUserInfo.pdb
 C:\Users\remoteadmin\Desktop\GetUserInfo\GetUserInfo\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Sudharsan\Codeplex\sp2010userinfo\GetUserInfo\GetUserInfo\obj\x86\Debug\GetUserInfo.exe
+D:\Sudharsan\Codeplex\sp2010userinfo\GetUserInfo\GetUserInfo\obj\x86\Debug\GetUserInfo.pdb
+D:\Sudharsan\Codeplex\sp2010userinfo\GetUserInfo\GetUserInfo\bin\Debug\GetUserInfo.exe
+D:\Sudharsan\Codeplex\sp2010userinfo\GetUserInfo\GetUserInfo\bin\Debug\GetUserInfo.pdb
+D:\Sudharsan\Codeplex\sp2010userinfo\GetUserInfo\GetUserInfo\obj\x86\Debug\ResolveAssemblyReference.cache

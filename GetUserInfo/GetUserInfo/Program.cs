@@ -11,6 +11,8 @@ using System.ServiceModel.Channels;
 using System.ServiceModel;
 using System.Runtime.Serialization;
 using System.Web;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace GetUserInfo
 {
@@ -20,7 +22,7 @@ namespace GetUserInfo
         {
             try
             {
-                using (SPSite Sitecollection = new SPSite("<Site URL>"))
+                using (SPSite Sitecollection = new SPSite("<Site URL>"))                
                 {
                     using (SPWeb site = Sitecollection.OpenWeb())
                     {
@@ -53,6 +55,25 @@ namespace GetUserInfo
 
                         if (((ProfileValueCollectionBase)(currentProfile["PreferredName"])).Value != null)
                             Console.WriteLine("Department: " + currentProfile["PreferredName"].ToString());
+
+                        // To get all the User Profiles                        
+                        IEnumerator profileCollection = profileManager.GetEnumerator();
+                        while (profileCollection.MoveNext())
+                        {
+                            UserProfile Profile = (UserProfile)profileCollection.Current;
+                            ProfileValueCollectionBase profileValueColl = Profile.GetProfileValueCollection(PropertyConstants.PreferredName);
+                            if ((profileValueColl != null) && (profileValueColl.Value != null))
+                                Console.WriteLine("Name: " + profileValueColl.Value);
+
+                            profileValueColl = Profile.GetProfileValueCollection(PropertyConstants.AboutMe);
+                            if ((profileValueColl != null) && (profileValueColl.Value != null))
+                                Console.WriteLine("About Me: " + profileValueColl.Value);
+
+                            profileValueColl = Profile.GetProfileValueCollection(PropertyConstants.Department);
+                            if ((profileValueColl != null) && (profileValueColl.Value != null))
+                                Console.WriteLine("Department: " + profileValueColl.Value);
+                            Console.WriteLine("");
+                        }
                         #endregion                        
                     }
                 }
